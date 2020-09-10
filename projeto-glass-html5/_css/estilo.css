@@ -91,9 +91,9 @@ nav#menu {
 nav#menu ul {
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
+    position: absolute; /* era absoluto */
     top: -20px;
-    left: 300px;
+    left: 450px; /* era 300px */
 }
 
 nav#menu li {
