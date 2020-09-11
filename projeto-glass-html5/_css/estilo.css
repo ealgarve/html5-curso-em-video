@@ -132,6 +132,11 @@ section#corpo {
     padding-right: 15px;
 }
 
+article#noticia-principal h2 {
+    font-size: 12pt;
+    
+}
+
 table#tabelaspec {
     border: 1px solid #606060;
     border-spacing: 0px;
@@ -145,6 +150,30 @@ table#tabelaspec td {
     text-align: center;
     vertical-align: top;
 
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cececece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    font-size: 8pt;
+    margin-top: 10px;
 }
 
 aside#lateral {
