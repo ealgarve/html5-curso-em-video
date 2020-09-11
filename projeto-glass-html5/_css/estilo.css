@@ -190,3 +190,15 @@ footer#rodape {
 footer#rodape p {
     text-align: center;
 }
+
+/* estilos do anotacoes.html */
+
+article#javascript {
+    background-color: aqua;
+    
+}
+article#javascript img {
+    box-shadow: 10px 10px 10px darkblue;
+    position: relative;
+    left: 100px;
+}

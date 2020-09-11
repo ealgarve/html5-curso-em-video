@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anotações do Curso de HTML5</title>
     <link rel="stylesheet" href="_css/estilo.css">
+    <script>
+        /* Acende Lâmpada versão 1.0 */
+
+        function acendelampada() {
+            document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";            
+        }
+        function apagalampada() {
+            document.getElementById("luz").src = "_imagens/lampada-apagada.jpg";
+        }
+        function quebralampada() {
+            document.getElementById("luz").src = "_imagens/lampada-quebrada.jpg";
+        }
+
+        /* Acende Lâmpada versão 2.0 */
+
+        var quebrada = false;
+        function mudalampada(tipo) {
+            if (tipo == 1) {
+                arquivo = "_imagens/lampada-acesa.jpg";
+            }
+            if (tipo == 2) {
+                arquivo = "_imagens/lampada-apagada.jpg";
+            }
+            if (tipo == 3) {
+                arquivo = "_imagens/lampada-quebrada.jpg";
+            }
+            if (!quebrada) {
+                document.getElementById("luz_2").src = arquivo;
+                if (tipo == 3) {
+                    quebrada = true;
+                }
+            }
+        }
+        
+        /* Acende Lâmpada versão 3.0 */
+
+        var quebrada2 = false;
+        function mudalampada2(tipo) {
+            if (!quebrada2) {
+                document.getElementById("luz_3").src = "_imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada2 = true;
+                }
+            }
+        }
+
+    </script>
 </head>
 <body>
     <div id="interface">
@@ -119,11 +166,26 @@
         
         </section>
         <aside id="lateral">
-            <article>
+
+            <!-- Aprendendo JavaScript -->
+
+            <article id="javascript"> 
                 <h1>Testando JavaScript</h1>
                 <script>
                     document.write("Hoje é dia: " + Date());
                 </script>
+
+                <!-- Script para acender a Lâmpada -->
+
+                <h1>Acenda a Lâmpada</h1>
+                <img class="lampada" src="_imagens/lampada-apagada.jpg" onmousemove="acendelampada()" id="luz" onmouseout="apagalampada()" onclick="quebralampada()"> <!-- ou onclic, on qualquer coisa -->
+
+                <h1>Acende a Lâmpada 2.0</h1>
+                <img class="lampada" src="_imagens/lampada-apagada.jpg" onmousemove="mudalampada(1)" id="luz_2" onmouseout="mudalampada(2)" onclick="mudalampada(3)">
+
+                <h1>Acende a Lâmpada 3.0</h1>
+                <img class="lampada" src="_imagens/lampada-apagada.jpg" onmousemove="mudalampada2('lampada-acesa')" id="luz_3" onmouseout="mudalampada2('lampada-apagada')" onclick="mudalampada2('lampada-quebrada')">
+
             </article>
         </aside>
         <footer id="rodape">
