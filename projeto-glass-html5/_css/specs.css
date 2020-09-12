@@ -2,7 +2,7 @@
 
 section#conteudo {
     width: 1000px;
-    margin: auto;
+    margin: auto; /* auto para ficar centralizado na página */
 }
 
 iframe#frame-spec {
@@ -13,5 +13,5 @@ iframe#frame-spec {
 }
 
 iframe#frame-spec::-webkit-scrollbar {
-    display: none;
+    display: none; /* não tirou as barras de rolagem */
 }
