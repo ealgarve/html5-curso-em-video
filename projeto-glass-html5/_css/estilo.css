@@ -246,3 +246,32 @@ footer#rodape p {
     text-align: center;
 }
 
+/* configurando os videos */
+
+div#video-pricipal {
+    width: 350px;
+    height: auto;
+    margin: auto;
+}
+
+video#filme-principal {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: -5px;
+    width: 500px;
+}
+
+div#video-aside {
+    width: 500px;
+    height: auto;
+    margin: auto;
+}
+
+video#filme-aside {
+    display: block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 350px;
+}
